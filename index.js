@@ -28,7 +28,9 @@ function generateRandomPasswordTwo() {
 }
 
 function validateInput() {
-    if (document.getElementById("inputlength-el").value.trim() == "") {
+    if (document.getElementById("inputlength-el").value.trim() == 0){
+        alert("Allowed inputs are only from ranges 1-18, try entering a valid number.");
+    } else if (document.getElementById("inputlength-el").value.trim() == "") {
         alert("Please enter a number.");
         return false;
     }
