@@ -37,7 +37,7 @@ function validateInput() {
 function generateRandomPasswords() {
     validateInput()
     if (document.getElementById("inputlength-el").value.trim() > 18) {
-        alert("Allowed inputs are only from ranges 1-18, Try entering a valid number.")
+        alert("Allowed inputs are only from ranges 1-18, try entering a valid number.")
     } else {
         let generatedPasswordOne = generateRandomPasswordOne()
         let generatedPasswordTwo = generateRandomPasswordTwo()
