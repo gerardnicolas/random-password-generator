@@ -78,6 +78,6 @@ function copyRandPassTwo() {
 
         document.execCommand('copy');
         console.log('Copied text: ' + copyText);
-        alert('Copied to clipboard: ' + copyText);
+        alert('Copied to clipboard! + "(" + copyText + ")";
     }
 }
