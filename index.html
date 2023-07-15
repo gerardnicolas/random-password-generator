@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+
+<head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+	<title></title>
+	<link rel="stylesheet" href="index.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Karla:wght@400;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<div id="container">
+		<h1>Generate a
+			<br>
+			<span id="ranpass">random password</span>
+		</h1>
+		<p id="p-desc">Never use an insecure password again.</p>
+		<p id="p-rule"><i>Can generate passwords from up to 18 characters long.</i></p>
+		<input type="number" id="inputlength-el" placeholder="Input password length"></input>
+		<button id="gen-pass" onclick="generateRandomPasswords()">Generate passwords</button>
+		<hr id="the-line">
+		<div id="genpasses">
+			<button id="randompassone-el" class="generatedPasswords" onclick="copyRandPassOne()"></button>
+			<button id="randompasstwo-el" class="generatedPasswords" onclick="copyRandPassTwo()"></button>
+		</div>
+	</div>
+
+	<script src="index.js"></script>
+</body>
+
+</html>
